@@ -1,0 +1,126 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("register.jpg") no-repeat;
+  background-size: cover;
+}
+.container {
+  width: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.703);
+  padding: 28px;
+  box-shadow: 0 50px 50px -50px rgb(32, 54, 54);
+  border-radius: 4px;
+  max-width: 100%;
+}
+.container .myform {
+  display: flex;
+  width: 100%;
+}
+.login-redirect {
+  margin-bottom: 10px;
+}
+.login-redirect i {
+  color: rgba(12, 135, 135, 0.932);
+}
+.login-redirect a {
+  text-decoration: none;
+}
+.click-to-login {
+  color: rgba(10, 153, 153, 0.932);
+  word-spacing: 5px;
+  margin-left: 5px;
+}
+.container .myform h2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("register.jpg");
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 20px;
+  text-align: center;
+  border-radius: 40px;
+  border: none;
+  outline: none;
+  color: #fff;
+  padding: 7px;
+  font-weight: 500;
+  font-size: 20px;
+}
+.container .myform input {
+  border: none;
+  outline: none;
+  border-radius: 0;
+  width: 100%;
+  border-bottom: 2px solid #1c1c1e;
+  margin-bottom: 18px;
+  padding: 7px 0;
+  font-size: 14px;
+}
+.myform form input {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.container .myform button {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("register.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  font-size: 18px;
+  padding: 8px 8px;
+  font-weight: 600;
+  width: 100%;
+  cursor: pointer;
+}
+button:hover {
+  transform: scale(1.05);
+  transition: .5s;
+}
+/* Tablet Screens */
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    padding: 20px;
+  }
+  .container .myform h2 {
+    font-size: 18px;
+    padding: 6px;
+  }
+  .container .myform input {
+    font-size: 16px;
+    padding: 10px 0;
+  }
+  .container .myform button {
+    font-size: 16px;
+    padding: 10px;
+  }
+}
+/* Mobile Screens */
+@media (max-width: 480px) {
+  .container {
+    width: 95%;
+    padding: 15px;
+  }
+  .container .myform h2 {
+    font-size: 16px;
+    padding: 5px;
+  }
+  .container .myform input {
+    font-size: 16px;
+    padding: 12px 0;
+  }
+  .container .myform button {
+    font-size: 16px;
+    padding: 12px;
+  }
+}

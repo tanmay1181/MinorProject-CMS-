@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+    <link rel="stylesheet" href="admin_login.css"/>
+</head>
+<body>
+    <div class="login-form">
+        <div class="container">
+            <div class="main">
+                <div class="content">
+                    <h2>Admin Login</h2>
+                    <form action="admin_login.php" method="POST">
+                        <input type="text" class="input-field" id="uname" name="uname" placeholder="Username" required autofocus>
+                        <input type="password" class="input-field" id="pwd" name="pwd" placeholder="Password" required>
+                        <input type="checkbox" class="show-pwd" onclick="showPassword()"><span>Show Password</span>
+                        <button type="submit" class="btn">Login</button>
+                    </form>
+                </div>
+                <div class="form-img">
+                    <img src="admin_pic.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="show_hide_pwd.js"></script>
+</body>
+</html>
