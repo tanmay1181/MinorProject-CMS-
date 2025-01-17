@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+
+    <title>Interactive Content Page</title>
+    <style>
+        /* General Styles */
+
+        body {
+            font-family: 'Josefin Sans', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #101310;
+            background-color: #FFC300;
+        }
+
+        h1, h2 {
+            color: #50422c;
+            text-align: center;
+            font-family: 'Oswald', sans-serif;
+            font-size: xx-large;
+        }
+
+        p {
+            text-align: center;
+            max-width: 1000px;
+            margin: 0 auto 20px;
+            font-size: larger;
+        }
+
+        /* Section Styles */
+        section {
+            padding: 20px;
+            margin: 20px;
+            background: #ecfafa;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        ul {
+            max-width: 1000px;
+            margin: 0 auto 20px;
+            padding-left: 20px;
+        }
+
+        ul li {
+            margin-bottom: 5px;
+            font-size: larger;
+        }
+
+        table {
+            width: 90%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            text-align: left;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        table th, table td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            font-size: large;
+            text-align: center;
+        }
+
+        table th {
+            background-color: #007acc;
+            color: #fff;
+        }
+
+        /* Image Carousel */
+        .carousel {
+            position: relative;
+            max-width: 700px;
+            margin: 20px auto;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .carousel img {
+            width: 100%;
+            display: none;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .carousel img.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bachelor of Computer Application(BCA)</h1>
+        <!--<p>A professional page featuring an introduction, bullet points, tables, and an image carousel.</p>-->
+    </header>
+
+    <main>
+        <!-- Section 1: Introduction -->
+        <section>
+            <h2>Introduction</h2>
+            <p>
+                A Bachelor of Computer Applications (BCA) is a popular undergraduate program 
+                tailored for students who wish to delve into the world of computer science and IT
+            </p>
+            <div class="carousel" id="carousel2">
+                <img src="https://t4.ftcdn.net/jpg/03/08/69/75/360_F_308697506_9dsBYHXm9FwuW0qcEqimAEXUvzTwfzwe.jpg" alt="Image 4" class="active">
+                <img src="https://www.innovationnewsnetwork.com/wp-content/uploads/2022/12/iStock-MF3d-1361008761-696x392.jpg" alt="Image 5">
+                <img src="https://static1.srcdn.com/wordpress/wp-content/uploads/2019/12/Tony-Stark-Hero-Villain-Feature-Image-e1576849000148.jpg" alt="Image 6">
+            </div>
+        </section>
+
+        <!-- Section 2: Bullet Points -->
+        <section>
+            <h2>Course Structure</h2>
+            <ul>
+                <li><b>Duration:</b> Typically 3 years, divided into 6 semesters.</li>
+                <li><b>Core Subjects:</b> Programming languages (like C++, Java, Python), Database Management Systems, 
+                    Operating Systems, Web Technologies, Software Engineering, Computer Networks, and more.</li>
+                <li><b>Electives:</b> Depending on the institution, students can choose from various electives 
+                    like Data Science, Machine Learning, Artificial Intelligence, Cloud Computing, etc.</li>
+            </ul>
+            <h2>Skills Developed</h2>
+            <ul>
+                <li><b>Programming and Coding:</b> Strong foundation in various 
+                    programming languages and coding practices.</li>
+                <li><b>Problem-Solving:</b> Develop analytical and logical skills 
+                    to solve complex problems.</li>
+                <li><b>Software Development:</b> Learn to design, develop, and test software applications.</li>
+                <li><b>Project Management:</b> Gain knowledge in managing software projects, including planning, execution, and monitoring.</li>
+            </ul>
+            <h2>Career Opportunities</h2>
+            <ul>
+                <li><b>IT Industry:</b> Roles like Software Developer, System Analyst, Web Developer, Database Administrator, etc.</li>
+                <li><b>Further Studies:</b> Option to pursue higher education like MCA (Master of Computer Applications) or M.Scin Computer Science.</li>
+                <li><b>Entrepreneurship:</b> With the skills acquired, students can also start their own tech ventures or join startups.</li>
+            </ul>
+
+            <div class="carousel" id="carousel3">
+                <img src="https://i.pinimg.com/736x/69/b8/66/69b866fe7731b295199eee7d25b55aeb.jpg" alt="Image 7" class="active">
+                <img src="https://img.freepik.com/free-vector/stock-market-cartoon-composition-with-male-broker-looking-into-laptop-computer-vector-illustration_1284-84445.jpg" alt="Image 8">
+                <img src="https://img.freepik.com/premium-photo/businessman-office-worker-overwork-negative-emotions-created-with-generative-ai-technology_67092-3827.jpg" alt="Image 9">
+                <img src="https://img.freepik.com/premium-vector/tired-office-worker-man-character-sleeping-workplace-angry-boss-yelling-him_133260-107.jpg" alt="Image 10">
+                <img src="https://www.shutterstock.com/image-vector/man-employee-sit-desk-working-600nw-2484110841.jpg" alt="Image 11">
+                <img src="https://vmn-ornet.imgix.net/uploads/2023/03/ontslagontslaanstaande-voeteruit-geschopt-scaled.jpg?auto=compress%2Cformat&q=50" alt="Image 12">
+            </div>
+
+        </section>
+
+        <!-- Section 3: Tables -->
+        <section>
+            <h2>Course Overview</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Field</th>
+                        <th>Eligibility</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Educational Qualification</td>
+                        <td>Candidates must have completed their secondary education (10+2) from a recognised board or institution</td>
+                    </tr>
+                    <tr>
+                        <td>Subjects</td>
+                        <td>Most institutions require candidates to have studied Mathematics as a compulsory subject in their 10+2 curriculum</td>
+                    </tr>
+                    <tr>
+                        <td>Entrance Exams</td>
+                        <td>While specific requirements may vary, candidates generally need to meet a minimum percentage of marks in their 10+2 examinations, often ranging from 45% to 50%.</td>
+                    </tr>
+                    <tr>
+                        <td>Minimum Marks</td>
+                        <td>Some universities or colleges may conduct entrance exams for admission to their BCA program. Candidates may need to qualify for these exams to be eligible for admission</td>
+                    </tr>
+                    <tr>
+                        <td>Age Limit</td>
+                        <td>There is usually no upper age limit for pursuing a BCA degree, but candidates should meet the minimum age requirements set by the institution or university. </td>
+                    </tr>
+                    
+                    </tr>
+                </tbody>
+            </table>
+
+        <!-- Section 4: Image Carousel -->
+            <div class="carousel" id="carousel1">
+                <img src="https://t4.ftcdn.net/jpg/05/07/26/35/360_F_507263544_1uixOcJGNwpv3q3WZgyqW1opDCU07Qek.jpg" alt="Image 1" class="active">
+                <img src="https://img.favpng.com/5/11/16/cartoon-money-png-favpng-it0PdMqtZGCQuyZHd8Mux81N2.jpg" alt="Image 2">
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/048/029/266/small_2x/poor-man-is-sad-because-of-empty-pockets-and-lack-of-money-for-purchases-as-metaphor-for-bankruptcy-financial-crisis-and-inflation-cause-stress-for-poor-guy-needing-unemployment-benefits-png.png" alt="Image 3">
+            </div>     
+        </section>
+        <section>
+            <h2>Why BCA?</h2>
+            <ul>
+                <li><b>Versatility:</b> Offers a broad range of subjects, making students adaptable to various roles in the tech industry.</li>
+                <li><b>Industry-Relevant Skills:</b> Curriculum designed to meet the current demands of the IT industry.</li>
+                <li><b>Job Prospects:</b> High demand for skilled IT professionals in both national and international markets.</li>
+            </ul>
+        </section>
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2024 TRACKMYCOURSE</p>
+    </footer>
+
+    <script>
+        function startCarousel(carouselId) {
+            const images = document.querySelectorAll(`#${carouselId} img`);
+            let index = 0;
+
+            setInterval(() => {
+                images[index].classList.remove('active');
+                index = (index + 1) % images.length;
+                images[index].classList.add('active');
+            }, 3000);
+        }
+
+        // Start the carousels
+        startCarousel('carousel1');
+        startCarousel('carousel2');
+        startCarousel('carousel3');
+    </script>
+</body>
+</html>
