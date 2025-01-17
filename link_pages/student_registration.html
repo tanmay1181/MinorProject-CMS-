@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="student_registration.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="myform">
+            <form action="student_registration.php" method="POST">
+                <div class="login-redirect">
+                    <i class="fa-solid fa-right-to-bracket"></i>
+                    <a href="student_login.html">
+                        <span class="click-to-login">Click Here for login !</span>
+                    </a>
+                </div>
+                <h2>Student Registration</h2>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required autofocus>
+                <input type="text" id="phone" name="phone" placeholder="Enter your phone no" required>
+                <input type="text" id="email" name="email" placeholder="Enter your email address" required>
+                <input type="text" id="uname" name="uname" placeholder="Username" required>
+                <input type="password" id="pwd" name="pwd" placeholder="Password" required>
+                <button type="submit" name = "register_btn">Register</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
