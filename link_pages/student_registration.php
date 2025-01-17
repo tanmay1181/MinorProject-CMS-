@@ -16,13 +16,13 @@ function sendemail_verify($name, $email, $verify_token){
     $mail->SMTPAuth   = true; 
 
     $mail->Host       = 'smtp.gmail.com';              
-    $mail->Username   = 'tanmaymishra283@gmail.com';                 
+    $mail->Username   = 'trackmycourse01@gmail.com';                 
     $mail->Password   = 'nczpunlnbhvpmjxo'; 
                                                          
     $mail->SMTPSecure = 'tls';                          
     $mail->Port       = 587; 
 
-    $mail->setFrom('tanmaymishra283@gmail.com', $name);
+    $mail->setFrom('trackmycourse01@gmail.com', $name);
     $mail->addAddress($email);  
                                                               
     $mail->isHTML(true);                                 

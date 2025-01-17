@@ -32,7 +32,7 @@ function reset_password_mail($name, $email, $token){
      <h2>This Email is sent to you by TrackMyCourse to Reset Your Password</h2>
      <h5>To reset Your password click the below given link</h5>
      <br/><br/>
-     <a href = 'http://localhost/login_email_verification/change_password.php?token=$token&email=$email'>Click Me</a>
+     <a href = 'http://localhost/MinorProject/link_pages/change_password.php?token=$token&email=$email'>Click Me</a>
      " ;
      $mail->Body = $email_template;
      $mail->send();
@@ -78,11 +78,11 @@ if(isset($_POST['update_password_btn'])){
 
             if(mysqli_num_rows($check_token_run) > 0){
                 if($new_password == $confirm_password){
-                    $update_password = "UPDATE `student` SET `password`= '$new_password' WHERE verify_token = '$token' LIMIT 1";
+                    $update_password = "UPDATE student SET password= '$new_password' WHERE verify_token = '$token' LIMIT 1";
                     $update_password_run = mysqli_query($conn, $update_password);
                     if($update_password_run){
                         $new_token = md5(rand());
-                        $update_token = "UPDATE `student` SET `verify_token`= '$new_token' WHERE email = '$email' LIMIT 1";
+                        $update_token = "UPDATE student SET verify_token= '$new_token' WHERE email = '$email' LIMIT 1";
                         $update_token_run = mysqli_query($conn, $update_token);
     
                         echo("<script>alert('Password has been changed!'); location.replace('student_login.html');</script>");
